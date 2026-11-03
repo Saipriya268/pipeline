@@ -1,0 +1,5 @@
+event_id,order_id,customer_id,event_type,event_time,quantity,unit_price_cents,discount_cents,net_amount_cents,payload_sha256,run_id,source_file,source_row
+evt_001,order_001,customer_001,purchase,2026-01-02T12:00:00.000000Z,2,1000,100,1900,129d8d42685894b967f1280560c78f217f13b203fdbd331445d3a5189ccf3c4e,a6a6d589-ca66-4cf5-aa35-eeb0a74f518e,/workspace/scratch/f89923119048/bounded_pipeline/samples/events.ndjson,1
+evt_002,order_001,customer_001,refund,2026-01-01T12:00:00.000000Z,1,500,0,-500,16ebce18d3f64dfb93bbde700bcbc16aa506841f0a2936e3481f883785142137,a6a6d589-ca66-4cf5-aa35-eeb0a74f518e,/workspace/scratch/f89923119048/bounded_pipeline/samples/events.ndjson,4
+evt_003,order_001,customer_002,purchase,2026-01-02T12:00:00.000000Z,1,0,0,0,80c7a7425ef608bb28e12da1b72aac890e5422c8764121e1a4954da825f5feb4,a6a6d589-ca66-4cf5-aa35-eeb0a74f518e,/workspace/scratch/f89923119048/bounded_pipeline/samples/events.ndjson,5
+evt_004,order_001,customer_003,purchase,2026-01-02T12:00:00.000000Z,1,100,100,0,dcf75178964e31c07e17eed5f874242a5023b1461b62eeb5eae67d40ebac4e76,a6a6d589-ca66-4cf5-aa35-eeb0a74f518e,/workspace/scratch/f89923119048/bounded_pipeline/samples/events.ndjson,6

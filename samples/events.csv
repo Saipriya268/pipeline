@@ -1,0 +1,11 @@
+event_id,order_id,customer_id,event_type,event_time,quantity,unit_price_cents,discount_cents
+evt_001,order_001,customer_001,purchase,2026-01-02T12:00:00Z,2,1000,100
+evt_001,order_001,customer_001,purchase,2026-01-02T12:00:00Z,2,1000,100
+evt_001,order_001,customer_001,purchase,2026-01-02T12:00:00Z,3,1000,100
+evt_002,order_001,customer_001,refund,2026-01-01T12:00:00Z,1,500,0
+evt_003,order_001,customer_002,purchase,2026-01-02T12:00:00Z,1,0,0
+evt_004,order_001,customer_003,purchase,2026-01-02T12:00:00Z,1,100,100
+,order_001,customer_001,purchase,2026-01-02T12:00:00Z,2,1000,100
+evt_005,order_001,unknown,purchase,2026-01-02T12:00:00Z,2,1000,100
+evt_006,order_001,customer_001,purchase,2026-01-02T12:00:00Z,2,1000,2001
+evt_007,order_001,customer_001,purchase,2026-01-02T12:00:00Z,0,1000,100

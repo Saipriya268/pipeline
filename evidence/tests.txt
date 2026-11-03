@@ -1,0 +1,39 @@
+test_csv_and_cross_format_duplicates (test_pipeline.PipelineTests.test_csv_and_cross_format_duplicates) ... ok
+test_csv_bad_field_count (test_pipeline.PipelineTests.test_csv_bad_field_count) ... ok
+test_csv_schema_change_fails (test_pipeline.PipelineTests.test_csv_schema_change_fails) ... {"event": "run_failed", "run_id": "c226991e-e569-4722-b059-f3332c7f8606", "failure_reason": "unexpected CSV schema: header must contain exactly the documented fields", "input_count": 0, "accepted_count": 0, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_deterministic_generator (test_pipeline.PipelineTests.test_deterministic_generator) ... ok
+test_discount_boundary_and_over_discount (test_pipeline.PipelineTests.test_discount_boundary_and_over_discount) ... ok
+test_duplicate_json_property (test_pipeline.PipelineTests.test_duplicate_json_property) ... ok
+test_duplicate_same_conflicting_and_rerun (test_pipeline.PipelineTests.test_duplicate_same_conflicting_and_rerun) ... ok
+test_empty_and_header_only_csv (test_pipeline.PipelineTests.test_empty_and_header_only_csv) ... ok
+test_empty_input (test_pipeline.PipelineTests.test_empty_input) ... ok
+test_hand_calculated_sample (test_pipeline.PipelineTests.test_hand_calculated_sample) ... ok
+test_happy_path_and_reconciliation (test_pipeline.PipelineTests.test_happy_path_and_reconciliation) ... ok
+test_invalid_customer_reference (test_pipeline.PipelineTests.test_invalid_customer_reference) ... ok
+test_invalid_timestamp_and_nonstandard_json (test_pipeline.PipelineTests.test_invalid_timestamp_and_nonstandard_json) ... ok
+test_invalid_timezone_offset (test_pipeline.PipelineTests.test_invalid_timezone_offset) ... ok
+test_invalid_utf8 (test_pipeline.PipelineTests.test_invalid_utf8) ... ok
+test_malformed_and_valid_records (test_pipeline.PipelineTests.test_malformed_and_valid_records) ... ok
+test_missing_file_exposes_failure (test_pipeline.PipelineTests.test_missing_file_exposes_failure) ... {"event": "run_failed", "run_id": "ba7dd7c2-595b-4e41-8317-ac40735d6b88", "failure_reason": "[Errno 2] No such file or directory: '/tmp/tmp8p41409x/input.ndjson'", "input_count": 0, "accepted_count": 0, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_missing_null_extra_and_wrong_type (test_pipeline.PipelineTests.test_missing_null_extra_and_wrong_type) ... ok
+test_no_final_newline (test_pipeline.PipelineTests.test_no_final_newline) ... ok
+test_oversize_fails_atomically (test_pipeline.PipelineTests.test_oversize_fails_atomically) ... {"event": "run_failed", "run_id": "57674d70-3e21-4773-9787-a2bad82faf66", "failure_reason": "physical line 2 exceeds 1048576 bytes; batch aborted", "input_count": 1, "accepted_count": 1, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_partial_failure_and_retry (test_pipeline.PipelineTests.test_partial_failure_and_retry) ... {"event": "run_failed", "run_id": "c1471b0e-403f-4912-b392-bc7fc5cda5c2", "failure_reason": "injected failure for recovery demonstration", "input_count": 5, "accepted_count": 5, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_quantity_price_boundaries (test_pipeline.PipelineTests.test_quantity_price_boundaries) ... ok
+test_refund_and_late_event_history (test_pipeline.PipelineTests.test_refund_and_late_event_history) ... ok
+test_rejects_rollback_on_partial_failure (test_pipeline.PipelineTests.test_rejects_rollback_on_partial_failure) ... {"event": "run_failed", "run_id": "301367d6-1d6a-402c-bd70-5923257ffbc3", "failure_reason": "injected failure for recovery demonstration", "input_count": 2, "accepted_count": 1, "duplicate_count": 0, "rejected_count": 1}
+ok
+test_report_requires_existing_database (test_pipeline.PipelineTests.test_report_requires_existing_database) ... ok
+test_scalar_closes_connection_on_success_and_error (test_pipeline.PipelineTests.test_scalar_closes_connection_on_success_and_error) ... ok
+test_source_mutation_rolls_back (test_pipeline.PipelineTests.test_source_mutation_rolls_back) ... {"event": "run_failed", "run_id": "29d160be-85e6-4e20-bae0-b492dbd923cf", "failure_reason": "source changed while processing; retry with an immutable file", "input_count": 1, "accepted_count": 1, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_timezone_normalized_duplicate (test_pipeline.PipelineTests.test_timezone_normalized_duplicate) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 1.705s
+
+OK

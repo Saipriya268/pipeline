@@ -1,0 +1,54 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "cpu_count": 9,
+  "memory_cap_mib": 128,
+  "method": "Separate process per ingestion; ru_maxrss includes interpreter; disk-backed SQLite cache 4 MiB. Generation and export excluded from ingestion timing.",
+  "results": [
+    {
+      "run_id": "b0b5d73d-44c1-4af2-b6a4-fd7cc4c7d4d9",
+      "status": "succeeded",
+      "committed_count": 9600,
+      "input_count": 10000,
+      "accepted_count": 9600,
+      "duplicate_count": 0,
+      "rejected_count": 400,
+      "seconds": 0.473,
+      "peak_rss_mib": 19.04,
+      "rows_per_second": 21162,
+      "input_mib": 1.95,
+      "expected_aggregate_matches": true,
+      "validation_passed": true
+    },
+    {
+      "run_id": "a8958e03-6750-4c91-9b4f-cbda635e2a79",
+      "status": "succeeded",
+      "committed_count": 96000,
+      "input_count": 100000,
+      "accepted_count": 96000,
+      "duplicate_count": 0,
+      "rejected_count": 4000,
+      "seconds": 4.782,
+      "peak_rss_mib": 19.41,
+      "rows_per_second": 20910,
+      "input_mib": 19.54,
+      "expected_aggregate_matches": true,
+      "validation_passed": true
+    },
+    {
+      "run_id": "ab0de809-76a9-44e7-a2aa-6302424407ac",
+      "status": "succeeded",
+      "committed_count": 480000,
+      "input_count": 500000,
+      "accepted_count": 480000,
+      "duplicate_count": 0,
+      "rejected_count": 20000,
+      "seconds": 27.603,
+      "peak_rss_mib": 19.29,
+      "rows_per_second": 18114,
+      "input_mib": 97.68,
+      "expected_aggregate_matches": true,
+      "validation_passed": true
+    }
+  ]
+}

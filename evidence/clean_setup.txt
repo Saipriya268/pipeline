@@ -1,0 +1,86 @@
+$ /tmp/tmpwo3580ue/venv/bin/python --version
+Python 3.12.14
+
+$ /tmp/tmpwo3580ue/venv/bin/python -m unittest discover -s tests -v
+test_csv_and_cross_format_duplicates (test_pipeline.PipelineTests.test_csv_and_cross_format_duplicates) ... ok
+test_csv_bad_field_count (test_pipeline.PipelineTests.test_csv_bad_field_count) ... ok
+test_csv_schema_change_fails (test_pipeline.PipelineTests.test_csv_schema_change_fails) ... {"event": "run_failed", "run_id": "1628ad3e-4c59-436e-96bf-cfb49c2de691", "failure_reason": "unexpected CSV schema: header must contain exactly the documented fields", "input_count": 0, "accepted_count": 0, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_deterministic_generator (test_pipeline.PipelineTests.test_deterministic_generator) ... ok
+test_discount_boundary_and_over_discount (test_pipeline.PipelineTests.test_discount_boundary_and_over_discount) ... ok
+test_duplicate_json_property (test_pipeline.PipelineTests.test_duplicate_json_property) ... ok
+test_duplicate_same_conflicting_and_rerun (test_pipeline.PipelineTests.test_duplicate_same_conflicting_and_rerun) ... ok
+test_empty_and_header_only_csv (test_pipeline.PipelineTests.test_empty_and_header_only_csv) ... ok
+test_empty_input (test_pipeline.PipelineTests.test_empty_input) ... ok
+test_hand_calculated_sample (test_pipeline.PipelineTests.test_hand_calculated_sample) ... ok
+test_happy_path_and_reconciliation (test_pipeline.PipelineTests.test_happy_path_and_reconciliation) ... ok
+test_invalid_customer_reference (test_pipeline.PipelineTests.test_invalid_customer_reference) ... ok
+test_invalid_timestamp_and_nonstandard_json (test_pipeline.PipelineTests.test_invalid_timestamp_and_nonstandard_json) ... ok
+test_invalid_timezone_offset (test_pipeline.PipelineTests.test_invalid_timezone_offset) ... ok
+test_invalid_utf8 (test_pipeline.PipelineTests.test_invalid_utf8) ... ok
+test_malformed_and_valid_records (test_pipeline.PipelineTests.test_malformed_and_valid_records) ... ok
+test_missing_file_exposes_failure (test_pipeline.PipelineTests.test_missing_file_exposes_failure) ... {"event": "run_failed", "run_id": "26f41147-95ff-4a7f-8ce5-84a0369f9a2d", "failure_reason": "[Errno 2] No such file or directory: '/tmp/tmpyjny9vms/input.ndjson'", "input_count": 0, "accepted_count": 0, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_missing_null_extra_and_wrong_type (test_pipeline.PipelineTests.test_missing_null_extra_and_wrong_type) ... ok
+test_no_final_newline (test_pipeline.PipelineTests.test_no_final_newline) ... ok
+test_oversize_fails_atomically (test_pipeline.PipelineTests.test_oversize_fails_atomically) ... {"event": "run_failed", "run_id": "1eb3efd1-aa9f-41d9-90b3-ba82841da737", "failure_reason": "physical line 2 exceeds 1048576 bytes; batch aborted", "input_count": 1, "accepted_count": 1, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_partial_failure_and_retry (test_pipeline.PipelineTests.test_partial_failure_and_retry) ... {"event": "run_failed", "run_id": "e62e9e46-8e42-4f05-8843-9d22aa36f06e", "failure_reason": "injected failure for recovery demonstration", "input_count": 5, "accepted_count": 5, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_quantity_price_boundaries (test_pipeline.PipelineTests.test_quantity_price_boundaries) ... ok
+test_refund_and_late_event_history (test_pipeline.PipelineTests.test_refund_and_late_event_history) ... ok
+test_rejects_rollback_on_partial_failure (test_pipeline.PipelineTests.test_rejects_rollback_on_partial_failure) ... {"event": "run_failed", "run_id": "4bf0e534-391b-4b9c-ae9f-96548dea197b", "failure_reason": "injected failure for recovery demonstration", "input_count": 2, "accepted_count": 1, "duplicate_count": 0, "rejected_count": 1}
+ok
+test_report_requires_existing_database (test_pipeline.PipelineTests.test_report_requires_existing_database) ... ok
+test_scalar_closes_connection_on_success_and_error (test_pipeline.PipelineTests.test_scalar_closes_connection_on_success_and_error) ... ok
+test_source_mutation_rolls_back (test_pipeline.PipelineTests.test_source_mutation_rolls_back) ... {"event": "run_failed", "run_id": "27cbbde1-52fc-4d8f-b9d5-c90874c02a96", "failure_reason": "source changed while processing; retry with an immutable file", "input_count": 1, "accepted_count": 1, "duplicate_count": 0, "rejected_count": 0}
+ok
+test_timezone_normalized_duplicate (test_pipeline.PipelineTests.test_timezone_normalized_duplicate) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 1.177s
+
+OK
+
+$ /tmp/tmpwo3580ue/venv/bin/python scripts/demo.py
+{
+  "first_run": {
+    "run_id": "c9552185-c969-42e2-83e5-d455a47eabd8",
+    "status": "succeeded",
+    "committed_count": 4,
+    "input_count": 12,
+    "accepted_count": 4,
+    "duplicate_count": 1,
+    "rejected_count": 7
+  },
+  "rerun": {
+    "run_id": "aad56600-613f-419f-bdd4-1eb0e8b630fe",
+    "status": "succeeded",
+    "committed_count": 0,
+    "input_count": 12,
+    "accepted_count": 0,
+    "duplicate_count": 5,
+    "rejected_count": 7
+  },
+  "retry": {
+    "run_id": "27b96fcb-4ea0-4dea-8498-ae40311a933e",
+    "status": "succeeded",
+    "committed_count": 4,
+    "input_count": 12,
+    "accepted_count": 4,
+    "duplicate_count": 1,
+    "rejected_count": 7
+  },
+  "validation": {
+    "event_count": 4,
+    "net_amount_cents": 1400,
+    "run_count_equation_errors": 0,
+    "reject_trace_errors": 0,
+    "output_trace_errors": 0,
+    "transformation_errors": 0,
+    "foreign_key_errors": 0,
+    "passed": true
+  },
+  "expected_answers_matched": true
+}
+{"event": "run_failed", "run_id": "b5d3b241-b7ad-45a0-bfe4-f09d6dc1d060", "failure_reason": "injected failure for recovery demonstration", "input_count": 4, "accepted_count": 2, "duplicate_count": 1, "rejected_count": 1}

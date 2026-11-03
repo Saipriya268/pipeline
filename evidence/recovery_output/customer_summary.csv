@@ -1,0 +1,4 @@
+customer_id,event_count,net_amount_cents
+customer_001,2,1400
+customer_002,1,0
+customer_003,1,0

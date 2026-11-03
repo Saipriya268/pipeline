@@ -1,0 +1,24 @@
+{
+  "input_count": 12,
+  "accepted_count": 4,
+  "duplicate_count": 1,
+  "rejected_count": 7,
+  "event_count": 4,
+  "net_amount_cents": 1400,
+  "accepted_event_ids": [
+    "evt_001",
+    "evt_002",
+    "evt_003",
+    "evt_004"
+  ],
+  "rejected_ndjson_lines": [
+    3,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "note": "CSV companion has first 10 records only: accepted=4, duplicates=1, rejected=5. Net total unchanged."
+}

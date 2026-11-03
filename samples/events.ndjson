@@ -1,0 +1,12 @@
+{"event_id": "evt_001", "order_id": "order_001", "customer_id": "customer_001", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 2, "unit_price_cents": 1000, "discount_cents": 100}
+{"event_id": "evt_001", "order_id": "order_001", "customer_id": "customer_001", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 2, "unit_price_cents": 1000, "discount_cents": 100}
+{"event_id": "evt_001", "order_id": "order_001", "customer_id": "customer_001", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 3, "unit_price_cents": 1000, "discount_cents": 100}
+{"event_id": "evt_002", "order_id": "order_001", "customer_id": "customer_001", "event_type": "refund", "event_time": "2026-01-01T12:00:00Z", "quantity": 1, "unit_price_cents": 500, "discount_cents": 0}
+{"event_id": "evt_003", "order_id": "order_001", "customer_id": "customer_002", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 1, "unit_price_cents": 0, "discount_cents": 0}
+{"event_id": "evt_004", "order_id": "order_001", "customer_id": "customer_003", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 1, "unit_price_cents": 100, "discount_cents": 100}
+{"event_id": null, "order_id": "order_001", "customer_id": "customer_001", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 2, "unit_price_cents": 1000, "discount_cents": 100}
+{"event_id": "evt_005", "order_id": "order_001", "customer_id": "unknown", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 2, "unit_price_cents": 1000, "discount_cents": 100}
+{"event_id": "evt_006", "order_id": "order_001", "customer_id": "customer_001", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 2, "unit_price_cents": 1000, "discount_cents": 2001}
+{"event_id": "evt_007", "order_id": "order_001", "customer_id": "customer_001", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 0, "unit_price_cents": 1000, "discount_cents": 100}
+{malformed JSON}
+{"event_id": "evt_008", "order_id": "order_001", "customer_id": "customer_001", "event_type": "purchase", "event_time": "2026-01-02T12:00:00Z", "quantity": 2, "unit_price_cents": 1000, "discount_cents": 100, "unexpected_column": "schema_drift"}

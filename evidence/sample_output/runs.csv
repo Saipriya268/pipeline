@@ -1,0 +1,3 @@
+run_id,source_file,source_sha256,started_at,ended_at,status,input_count,accepted_count,duplicate_count,rejected_count,committed_count,failure_reason
+22d973dd-ace2-4ed1-a91a-4b160cbbe0ab,/workspace/scratch/f89923119048/bounded_pipeline/samples/events.ndjson,334bb3950d87d24a68db7f704aad3ec4393d949ac421d212e1322d4ee0f795d9,2026-11-03T07:24:21.952659Z,2026-11-03T07:24:21.956205Z,succeeded,12,4,1,7,4,
+7b6372f3-d05c-464c-aeb7-3de9c407310f,/workspace/scratch/f89923119048/bounded_pipeline/samples/events.ndjson,334bb3950d87d24a68db7f704aad3ec4393d949ac421d212e1322d4ee0f795d9,2026-11-03T07:24:21.959580Z,2026-11-03T07:24:21.962721Z,succeeded,12,0,5,7,0,

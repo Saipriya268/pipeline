@@ -1,0 +1,10 @@
+{
+  "event_count": 4,
+  "net_amount_cents": 1400,
+  "run_count_equation_errors": 0,
+  "reject_trace_errors": 0,
+  "output_trace_errors": 0,
+  "transformation_errors": 0,
+  "foreign_key_errors": 0,
+  "passed": true
+}
